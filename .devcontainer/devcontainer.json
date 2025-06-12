@@ -1,0 +1,45 @@
+{
+  "name": "Next.js Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.rulers": [
+          80
+        ],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "always"
+        },
+        "files.autoSave": "afterDelay"
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "editorconfig.editorconfig",
+        "unifiedjs.vscode-mdx",
+        "eamodio.gitlens"
+      ]
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js Dev Server"
+    }
+  },
+  "updateRemoteUserUID": true,
+  "mounts": [
+    "source=${env:HOME}/.gitconfig,target=/root/.gitconfig,type=bind",
+    "source=${env:HOME}/.ssh,target=/root/.ssh,type=bind"
+  ]
+}
