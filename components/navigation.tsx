@@ -3,17 +3,11 @@
 import * as React from "react";
 import Link from "next/link";
 import {
-  CircleCheckIcon,
-  CircleHelpIcon,
-  CircleIcon,
   HomeIcon,
-  User,
   UserIcon,
-  Briefcase,
   BriefcaseIcon,
   SchoolIcon,
   FolderIcon,
-  InfoIcon,
   LibraryIcon,
   WrenchIcon,
   MailIcon,
@@ -27,12 +21,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-  navigationMenuItemClass,
-  navigationMenuContainerClass,
-  navigationMenuCustomClass,
 } from "@/components/ui/navigation-menu";
 
-export function NavMenu() {
+export function Navigation() {
   return (
     <div className="flex h-[10vh] w-screen items-center justify-center md:justify-start">
       <NavigationMenu viewport={false}>
@@ -121,25 +112,5 @@ export function NavMenu() {
         </NavigationMenuList>
       </NavigationMenu>
     </div>
-  );
-}
-
-function ListItem({
-  title,
-  children,
-  href,
-  ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
-  return (
-    <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link href={href}>
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-            {children}
-          </p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
   );
 }
