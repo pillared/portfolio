@@ -38,8 +38,14 @@
     }
   },
   "updateRemoteUserUID": true,
+  // "remoteEnv": {
+  //   "SSH_AUTH_SOCK": "/ssh-agent"
+  // },
+  "remoteUser": "node",
   "mounts": [
-    "source=${env:HOME}/.gitconfig,target=/root/.gitconfig,type=bind",
-    "source=${env:HOME}/.ssh,target=/root/.ssh,type=bind"
+    "source=${env:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind",
+    "source=${env:HOME}/.ssh,target=/home/node/.ssh,type=bind",
+    // "source=${env:SSH_AUTH_SOCK},target=/ssh-agent,consistency=cached"
+
   ]
 }
