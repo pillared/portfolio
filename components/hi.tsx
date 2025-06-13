@@ -27,11 +27,6 @@ export function Hi() {
     return () => clearInterval(interval);
   }, [config?.distinguishers]);
 
-  const currentDistinguisher =
-    config.distinguishers && config.distinguishers.length > 0
-      ? config.distinguishers[currentDistinguisherIndex]
-      : "";
-
   return (
     <section className="align-items m-8 flex items-center justify-between">
       <div className="ml-16">
