@@ -2,17 +2,17 @@
   "name": "Anthony",
   "description": "Hello world. My name is",
   "distinguishers": [
-    "a Software Engineer",
-    "a Tinkerer",
-    "a Leader",
-    "a Problem Solver",
-    "an Innovator",
-    "a Team Player",
-    "a Mentor",
-    "a Continuous Learner",
-    "a Communicator",
-    "Adaptable",
-    "a Strategic Thinker"
+    "a Software Engineer.",
+    "a Tinkerer.",
+    "a Leader.",
+    "a Problem Solver.",
+    "an Innovator.",
+    "a Team Player.",
+    "a Mentor.",
+    "a Continuous Learner.",
+    "a Communicator.",
+    "Adaptable.",
+    "a Strategic Thinker."
   ],
   "biography": {
     "details": "I’m a passionate developer who loves turning ideas into functional, thoughtful digital experiences. Whether it’s designing a clean UI or solving a tough backend challenge, I enjoy the process of figuring things out and making them work smoothly. My approach is a mix of creativity, careful problem-solving, and a genuine curiosity for new technologies. Above all, I care about building things that make a difference — for users, for teammates, and for the people who rely on them."
@@ -277,6 +277,7 @@
     {
       "id": "gsu",
       "name": "Georgia State",
+      "location": "Atlanta, GA",
       "educationType": "University",
       "degree": "Undergraduate",
       "degreeCategory": "BSc.",

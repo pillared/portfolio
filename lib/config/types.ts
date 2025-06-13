@@ -24,6 +24,7 @@ export interface Skills {
 export type Education = {
   id: string;
   name: string;
+  location: string;
   educationType: string;
   degree: string;
   degreeCategory: string;

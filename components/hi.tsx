@@ -2,6 +2,8 @@
 
 import { useConfigStore } from "@/lib/stores/useConfigStore"; // path to your Zustand store
 import React, { useState, useEffect } from "react";
+import { ReactTyped } from "react-typed";
+
 import Image from "next/image";
 
 export function Hi() {
@@ -37,13 +39,13 @@ export function Hi() {
         <h2 className="text-2xl font-semibold">My name is {config.name}</h2>
         <h3 className="text-2xl font-semibold">
           I am{" "}
-          <span
-            className="translate-y-0 transform transition-all duration-500 ease-in-out"
-            key={currentDistinguisherIndex}
-          >
-            {currentDistinguisher}
-          </span>
-          {"."}
+          <ReactTyped
+            strings={config?.distinguishers ?? []}
+            typeSpeed={100}
+            backSpeed={50}
+            backDelay={2000}
+            loop
+          />
         </h3>
       </div>
       <div className="mr-16">
