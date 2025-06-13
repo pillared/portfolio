@@ -19,7 +19,7 @@ export function ThemeModeToggle() {
     <Button
       variant="ghost"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="relative mr-2 flex h-8 w-16 items-center rounded-full bg-gray-100 p-1 transition-colors duration-300 dark:bg-gray-700"
+      className="relative order-5 mr-2 flex h-8 w-16 items-center gap-2 rounded-full bg-gray-100 p-1 transition-colors duration-300 md:order-none dark:bg-gray-700"
       aria-label="Toggle theme"
     >
       {/* The track */}

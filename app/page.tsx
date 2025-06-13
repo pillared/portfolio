@@ -1,10 +1,10 @@
-import Header from "@/components/header";
+"use client";
+import { Hi } from "@/components/hi";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-
-    </>
+    <div className="flex flex-col">
+      <Hi />
+    </div>
   );
 }
