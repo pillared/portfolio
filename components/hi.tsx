@@ -1,31 +1,17 @@
 "use client";
 
 import { useConfigStore } from "@/lib/stores/useConfigStore"; // path to your Zustand store
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
 
 import Image from "next/image";
 
 export function Hi() {
   const { fetchConfig, config } = useConfigStore();
-  const [currentDistinguisherIndex, setCurrentDistinguisherIndex] = useState(0);
 
   useEffect(() => {
     fetchConfig();
   }, [fetchConfig]);
-
-  useEffect(() => {
-    if (!config.distinguishers || config.distinguishers.length === 0) return;
-
-    console.info("here");
-    const interval = setInterval(() => {
-      setCurrentDistinguisherIndex(
-        (prevIndex) => (prevIndex + 1) % config.distinguishers.length
-      );
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [config?.distinguishers]);
 
   return (
     <section className="align-items m-8 flex items-center justify-between">
