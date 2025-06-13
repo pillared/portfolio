@@ -1,9 +1,8 @@
 "use client";
 
-import { useConfigStore } from "@/lib/stores/useConfigStore"; // path to your Zustand store
+import { useConfigStore } from "@/lib/stores/useConfigStore";
 import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
-
 import Image from "next/image";
 
 export function Hi() {

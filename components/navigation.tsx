@@ -50,7 +50,7 @@ export function Navigation() {
                 <li>
                   <NavigationMenuLink asChild>
                     <Link
-                      href="/biography"
+                      href="/about#biography"
                       className="flex-row items-center gap-2"
                     >
                       <UserIcon />
@@ -59,7 +59,7 @@ export function Navigation() {
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link
-                      href="/experience"
+                      href="/about#experience"
                       className="flex-row items-center gap-2"
                     >
                       <BriefcaseIcon />
@@ -68,7 +68,7 @@ export function Navigation() {
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link
-                      href="/skills"
+                      href="/about#skills"
                       className="flex-row items-center gap-2"
                     >
                       <WrenchIcon />
@@ -77,7 +77,7 @@ export function Navigation() {
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link
-                      href="/education"
+                      href="/about#education"
                       className="flex-row items-center gap-2"
                     >
                       <SchoolIcon />
