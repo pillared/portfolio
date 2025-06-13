@@ -49,7 +49,10 @@ export function Navigation() {
               <ul className="flex grid w-[200px] flex-col gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link href="#" className="flex-row items-center gap-2">
+                    <Link
+                      href="/biography"
+                      className="flex-row items-center gap-2"
+                    >
                       <UserIcon />
                       Biography
                     </Link>

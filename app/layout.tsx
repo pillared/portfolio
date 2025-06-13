@@ -34,7 +34,10 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
+      {/* <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head> */}
       <body>
         <ThemeProvider
           attribute="class"
@@ -44,7 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className={roboto.className}>
             <LayoutProvider>{children}</LayoutProvider>
           </div>
-          <Toaster />
+          {/* <Toaster /> */}
         </ThemeProvider>
       </body>
     </html>
