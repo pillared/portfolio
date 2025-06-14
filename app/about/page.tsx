@@ -40,7 +40,7 @@ export default function About() {
                         width={32}
                         height={32}
                         alt={`${name} icon`}
-                        className="h-5 w-5"
+                        className="h-16 w-16"
                       />
                       <a
                         href={docs}
@@ -56,9 +56,10 @@ export default function About() {
               </div>
             ))}
           </div>
+        </section>
 
-          {/* Interpersonal Skills */}
-          <div className="mt-12">
+        {/* Interpersonal Skills */}
+        {/* <div className="mt-12">
             <h3 className="mb-4 text-xl font-semibold">Interpersonal Skills</h3>
             <ul className="flex flex-wrap justify-center gap-4">
               {config.skills.interpersonal.map((skill) => (
@@ -71,10 +72,10 @@ export default function About() {
               ))}
             </ul>
           </div>
-        </section>
+        </section> */}
 
         {/* Education */}
-        <section id="education" className="mb-20 w-full max-w-3xl">
+        {/* <section id="education" className="mb-20 w-full max-w-3xl">
           <h2 className="mb-8 text-3xl font-semibold">Education</h2>
           {config.education.map(
             ({
@@ -112,7 +113,7 @@ export default function About() {
               </div>
             )
           )}
-        </section>
+        </section> */}
       </div>
     </main>
   );
