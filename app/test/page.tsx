@@ -4,83 +4,67 @@ import React, { useState, useEffect } from "react";
 import { useConfigStore } from "@/lib/stores/useConfigStore";
 import Image from "next/image";
 
-function repeatIconsToFill(
-  icons: string[],
-  containerWidth: number,
-  iconWidth = 50,
-  iconMargin = 16
-) {
-  if (!icons.length) return [];
-
-  const renderedWidth = iconWidth + iconMargin;
-
-  if (renderedWidth <= 0) return [];
-
-  const copiesNeeded = Math.ceil(
-    (2 * containerWidth) / (renderedWidth * icons.length)
-  );
-
-  if (isNaN(copiesNeeded) || copiesNeeded < 0) return [];
-
-  return Array.from({ length: copiesNeeded }, () => icons).flat();
-}
-
 export default function AnimatedIconsBackground() {
   const { fetchConfig, config } = useConfigStore();
 
   const [numRows, setNumRows] = useState(0);
-  const [repeatingIcons, setRepeatingIcons] = useState<string[]>([]);
+  const [icons, setIcons] = useState<string[]>([]);
 
   useEffect(() => {
     fetchConfig();
 
-    function updateNumRowsAndIcons() {
+    function update() {
       if (!config) return;
 
-      const rowHeight = 60;
-
+      const rowHeight = 64;
       const rows = Math.ceil(window.innerHeight / rowHeight);
       setNumRows(rows);
 
-      const icons = config.skills.technical.flatMap((techSkill) =>
+      // Extract icons
+      const extractedIcons = config.skills.technical.flatMap((techSkill) =>
         techSkill.items.map((item) => item.icon)
       );
 
-      if (icons.length === 0) return;
-
-      const iconWidth = 50;
-      const iconMargin = 16;
-
-      const repeatedIcons = repeatIconsToFill(
-        icons,
-        window.innerWidth,
-        iconWidth,
-        iconMargin
-      );
-
-      setRepeatingIcons((repeatingIcons) => repeatedIcons);
+      setIcons(extractedIcons);
     }
 
     if (config) {
-      updateNumRowsAndIcons();
-
-      window.addEventListener("resize", updateNumRowsAndIcons);
-      return () => window.removeEventListener("resize", updateNumRowsAndIcons);
+      update();
+      window.addEventListener("resize", update);
+      return () => window.removeEventListener("resize", update);
     }
   }, [fetchConfig, config]);
 
+  // Duplicate icons exactly twice for seamless loop
+  const iconsDoubled = [...icons, ...icons];
+
+  // Calculate total width for animated container:
+  // Each icon width + marginRight (50 + 16 = 66px)
+  // Total width = 66px * icons.length * 2 (because doubled)
+  const iconWidthWithMargin = 50 + 16;
+  const totalWidth = icons.length * iconWidthWithMargin * 2;
+
   return (
-    <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden select-none">
+    <div className="pointer-events-none absolute inset-0 z-0 select-none">
       {[...Array(numRows)].map((_, rowIndex) => (
         <div
           key={rowIndex}
-          style={{ transform: `translateX(${(rowIndex * 100) % 300}px)` }}
+          className="overflow-hidden"
+          style={{
+            paddingLeft: `${(rowIndex * 100) % 300}px`,
+            height: 64,
+            whiteSpace: "nowrap",
+          }}
         >
           <div
-            className="animate-slide-left whitespace-nowrap"
-            style={{ animationDelay: `-${rowIndex * 10}s` }}
+            className="animate-slide-left"
+            style={{
+              animationDelay: `-${rowIndex * 10}s`,
+              width: `${totalWidth}px`,
+              display: "inline-block",
+            }}
           >
-            {repeatingIcons.map((src, index) => (
+            {iconsDoubled.map((src, index) => (
               <Image
                 key={index}
                 src={src}
