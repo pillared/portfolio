@@ -42,7 +42,7 @@ export function Navigation() {
 
           <NavigationMenuItem className="relative order-3 flex items-center gap-2 md:order-none">
             <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
-              <LibraryIcon className="mr-2 w-[16px]" />
+              <LibraryIcon className="text-muted-foreground mr-2 w-[16px]" />
               About
             </NavigationMenuTrigger>
             <NavigationMenuContent className="absolute top-full left-0 mt-2 w-56">
