@@ -213,6 +213,7 @@
             "icon": "https://raw.githubusercontent.com/wavefrontHQ/docs/refs/heads/master/images/aws_ecs.png",
             "docs": "https://aws.amazon.com/ecs/"
           }
+        ]
       },
       {
         "id": "platforms-productivity",
