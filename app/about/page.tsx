@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { useConfigStore } from "@/lib/stores/useConfigStore";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function About() {
   const { fetchConfig, config } = useConfigStore();
@@ -16,16 +17,16 @@ export default function About() {
         {/* Biography */}
         <section
           id=""
-          className="flex min-h-[90vh] max-w-4xl flex-col items-center md:pt-[20vh]"
+          className="flex min-h-[80vh] max-w-4xl flex-col items-center md:pt-[20vh]"
         >
           <h1 className="text-4xl font-semibold">Biography</h1>
           <p className="mt-4 text-lg leading-relaxed">
             {config.biography.details}
           </p>
         </section>
-
+        <Separator />
         {/* Skills */}
-        <section id="skills" className="text-foreground mx-8 w-full">
+        <section id="skills" className="text-foreground mx-8 w-full py-10">
           <h2 className="mb-8 text-3xl font-semibold">Skills</h2>
 
           {/* Technical Skills */}
@@ -61,14 +62,12 @@ export default function About() {
                 </ul>
               </div>
             ))}
-            ;
           </div>
 
           {/* Interpersonal Skills */}
           <div className="mt-12 md:mx-[20vw]">
             <h3 className="mb-4 text-xl font-semibold">Interpersonal Skills</h3>
             <ul className="flex flex-wrap justify-center gap-4">
-              {/* <ul className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6"> */}
               {config.skills.interpersonal.map((skill) => (
                 <li
                   key={skill}
@@ -80,9 +79,12 @@ export default function About() {
             </ul>
           </div>
         </section>
-
+        <Separator />
         {/* Education */}
-        {/* <section id="education" className="mb-20 w-full max-w-3xl">
+        <section
+          id="education"
+          className="mb-20 w-full max-w-3xl py-10 md:mx-[20vw]"
+        >
           <h2 className="mb-8 text-3xl font-semibold">Education</h2>
           {config.education.map(
             ({
@@ -96,23 +98,49 @@ export default function About() {
               concentration,
               years,
               relevantCoursework,
+              icon,
             }) => (
-              <div key={id} className="mb-8 border-b border-gray-300 pb-4">
-                <h3 className="text-xl font-semibold">{name}</h3>
-                <p className="text-gray-600 italic">
-                  {educationType} — {degreeCategory} {degree}
-                </p>
-                <p className="text-gray-700">
-                  {major} (Concentration: {concentration})
-                </p>
-                <p className="text-gray-700">{location}</p>
-                <p className="text-gray-600">{years}</p>
+              <div key={id} className="mb-8 pb-4">
+                <div className="flex flex-col items-center justify-center px-2 sm:flex-row">
+                  <Image
+                    src={icon}
+                    width={1000}
+                    height={1000}
+                    alt={`${name} icon`}
+                    className="h-16 w-13"
+                  />
+
+                  <div className="px-4 text-center md:text-left">
+                    <h3 className="text-xl font-semibold">
+                      {degreeCategory} in {major}
+                      <span className="hidden md:inline"> - </span>
+                      <br className="block md:hidden" />
+                      {concentration}
+                    </h3>
+                    <p className="pt-1 text-gray-600">
+                      {name} {educationType}
+                      <span className="hidden md:inline"> - </span>
+                      <br className="block md:hidden" />
+                      {location}
+                    </p>
+                    <p className="text-gray-600">{years}</p>
+                  </div>
+                </div>
+
                 {relevantCoursework.length > 0 && (
                   <>
-                    <p className="mt-2 font-semibold">Relevant Coursework:</p>
-                    <ul className="list-inside list-disc">
+                    <p className="mt-2 mb-4 p-2 font-semibold">
+                      Relevant Coursework:
+                    </p>
+
+                    <ul className="flex flex-wrap justify-center gap-4">
                       {relevantCoursework.map((course) => (
-                        <li key={course}>{course}</li>
+                        <li
+                          key={course}
+                          className="font-small rounded-full bg-gray-200 px-4 py-1 text-sm text-gray-700"
+                        >
+                          {course}
+                        </li>
                       ))}
                     </ul>
                   </>
@@ -120,7 +148,8 @@ export default function About() {
               </div>
             )
           )}
-        </section> */}
+        </section>
+        <Separator />
       </div>
     </main>
   );

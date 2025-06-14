@@ -32,6 +32,7 @@ export type Education = {
   concentration: string;
   years: string;
   relevantCoursework: string[];
+  icon: string;
 };
 
 export interface WebsiteConfig {

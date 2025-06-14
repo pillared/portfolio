@@ -261,16 +261,20 @@
       "location": "Atlanta, GA",
       "educationType": "University",
       "degree": "Undergraduate",
-      "degreeCategory": "BSc.",
+      "degreeCategory": "B.Sc.",
       "major": "Computer Science",
       "concentration": "Software Engineering",
       "years": "2017-2021",
       "relevantCoursework": [
-        "Algorithms",
+        "Data Structures & Algorithms",
+        "System-Level Programming",
         "Artificial Intelligence",
-        "Linear Algebra"
+        "Robotics",
+        "Linear Algebra",
+        "Calculus I, II",
+        "Physics I, II"
       ],
-      "icon": "https://commkit.gsu.edu/files/2019/07/logostack2colorreverse.jpg"
+      "icon": "https://commkit.gsu.edu/files/2021/05/FlameBar_2RGB.png"
     }
   ],
 
