@@ -5,47 +5,40 @@ import { useConfigStore } from "@/lib/stores/useConfigStore";
 import Image from "next/image";
 
 export default function AnimatedIconsBackground() {
-  const { fetchConfig, config } = useConfigStore();
+  // Select only what you need
+  const config = useConfigStore((state) => state.config);
 
-  const [numRows, setNumRows] = useState(0);
-  const [icons, setIcons] = useState<string[]>([]);
+  // Memoize icon extraction
+  const icons = React.useMemo(() => {
+    if (!config) return [];
 
-  useEffect(() => {
-    fetchConfig();
+    return config.skills.technical.flatMap((techSkill) =>
+      techSkill.items.map((item) => item.icon)
+    );
+  }, [config]);
 
-    function update() {
-      if (!config) return;
+  // Calculate number of rows just once or on resize
+  const [numRows, setNumRows] = React.useState(0);
 
-      const rowHeight = 64;
-      const rows = Math.ceil(window.innerHeight / rowHeight);
-      setNumRows(rows);
-
-      // Extract icons
-      const extractedIcons = config.skills.technical.flatMap((techSkill) =>
-        techSkill.items.map((item) => item.icon)
-      );
-
-      setIcons(extractedIcons);
+  React.useEffect(() => {
+    function updateNumRows() {
+      setNumRows(Math.ceil(window.innerHeight / 64)); // rowHeight = 64
     }
 
-    if (config) {
-      update();
-      window.addEventListener("resize", update);
-      return () => window.removeEventListener("resize", update);
-    }
-  }, [fetchConfig, config]);
+    updateNumRows();
+    window.addEventListener("resize", updateNumRows);
+    return () => window.removeEventListener("resize", updateNumRows);
+  }, []);
 
-  // Duplicate icons exactly twice for seamless loop
-  const iconsDoubled = [...icons, ...icons];
+  // Combine icons
+  const iconsDoubled = React.useMemo(() => [...icons, ...icons], [icons]);
 
-  // Calculate total width for animated container:
-  // Each icon width + marginRight (50 + 16 = 66px)
-  // Total width = 66px * icons.length * 2 (because doubled)
+  // Calculate total width for the animation
   const iconWidthWithMargin = 50 + 16;
   const totalWidth = icons.length * iconWidthWithMargin * 2;
 
   return (
-    <div className="pointer-events-none absolute inset-0 z-0 select-none">
+    <div className="pointer-events-none absolute inset-0 z-0 h-screen select-none">
       {[...Array(numRows)].map((_, rowIndex) => (
         <div
           key={rowIndex}

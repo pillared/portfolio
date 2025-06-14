@@ -21,9 +21,9 @@ export function Hi() {
           I am{" "}
           <ReactTyped
             strings={config?.distinguishers ?? []}
-            typeSpeed={100}
-            backSpeed={50}
-            backDelay={2000}
+            typeSpeed={60}
+            backSpeed={45}
+            backDelay={1000}
             loop
           />
         </h3>

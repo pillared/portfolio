@@ -139,22 +139,38 @@
   }
 }
 
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.animate-slide-left {
+  transform: translateZ(0);
+  will-change: transform;
+  contain: layout paint;
+  animation: slide-left 60s linear infinite;
+  pointer-events: none;
 }
 
-.animate-slide-left {
-  display: inline-block;
-  white-space: nowrap;
-  animation: slide-left 60s linear infinite;
+@keyframes slide-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 .dark img,
 .dark svg {
   filter: invert(1) hue-rotate(180deg);
+}
+
+.custom-dashed-border {
+  border: 2px solid #60a5fa; /* Tailwind's blue-400 */
+  border-style: dashed;
+  border-image: repeating-linear-gradient(
+      to bottom,
+      #60a5fa 0,
+      #60a5fa 10px,
+      transparent 10px,
+      transparent 20px
+    )
+    15 stretch;
+  border-image-slice: 1;
 }

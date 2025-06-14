@@ -12,9 +12,12 @@ export default function About() {
 
   return (
     <main className="p-4">
-      <div className="bg-background text-foreground mx-auto flex min-h-screen max-w-4xl flex-col items-center p-4 text-center">
+      <div className="mx-auto flex flex-col items-center p-4 text-center">
         {/* Biography */}
-        <section id="biography" className="mb-20">
+        <section
+          id="biography"
+          className="flex min-h-[90vh] max-w-4xl flex-col items-center md:pt-[20vh]"
+        >
           <h1 className="text-4xl font-semibold">Biography</h1>
           <p className="mt-4 text-lg leading-relaxed">
             {config.biography.details}
@@ -22,13 +25,16 @@ export default function About() {
         </section>
 
         {/* Skills */}
-        <section id="skills" className="mb-20 w-full">
+        <section id="skills" className="text-foreground mx-8 w-full">
           <h2 className="mb-8 text-3xl font-semibold">Skills</h2>
 
           {/* Technical Skills */}
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
             {config.skills.technical.map((skillGroup) => (
-              <div key={skillGroup.id}>
+              <div
+                key={skillGroup.id}
+                className="mb-2 border-spacing-4 rounded-md border-2 border-dashed border-blue-400 p-6 dark:border-gray-200"
+              >
                 <h3 className="mb-4 text-xl font-semibold">
                   {skillGroup.name}
                 </h3>
@@ -46,7 +52,7 @@ export default function About() {
                         href={docs}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline"
+                        className="text-blue-600 hover:underline dark:text-gray-400"
                       >
                         {name}
                       </a>
@@ -55,6 +61,7 @@ export default function About() {
                 </ul>
               </div>
             ))}
+            ;
           </div>
         </section>
 
