@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       "raw.githubusercontent.com",
       "avatars.githubusercontent.com",
       "servicenow.com",
+      "commkit.gsu.edu",
     ],
   },
 };

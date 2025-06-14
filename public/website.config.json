@@ -238,17 +238,19 @@
       }
     ],
     "interpersonal": [
+      "Adaptable",
       "Communicative",
       "Critical Thinking",
+      "Curious",
       "Enthusiastic",
+      "Empathetic",
       "Hardworking",
       "Leadership",
       "Mentoring",
       "Open-minded",
       "Quick Learner",
       "Reliable",
-      "Team Collaboration",
-      "Curious"
+      "Team Collaboration"
     ]
   },
 
@@ -267,7 +269,8 @@
         "Algorithms",
         "Artificial Intelligence",
         "Linear Algebra"
-      ]
+      ],
+      "icon": "https://commkit.gsu.edu/files/2019/07/logostack2colorreverse.jpg"
     }
   ],
 

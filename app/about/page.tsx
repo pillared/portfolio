@@ -15,7 +15,7 @@ export default function About() {
       <div className="mx-auto flex flex-col items-center p-4 text-center">
         {/* Biography */}
         <section
-          id="biography"
+          id=""
           className="flex min-h-[90vh] max-w-4xl flex-col items-center md:pt-[20vh]"
         >
           <h1 className="text-4xl font-semibold">Biography</h1>
@@ -29,7 +29,7 @@ export default function About() {
           <h2 className="mb-8 text-3xl font-semibold">Skills</h2>
 
           {/* Technical Skills */}
-          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
+          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             {config.skills.technical.map((skillGroup) => (
               <div
                 key={skillGroup.id}
@@ -63,23 +63,23 @@ export default function About() {
             ))}
             ;
           </div>
-        </section>
 
-        {/* Interpersonal Skills */}
-        {/* <div className="mt-12">
+          {/* Interpersonal Skills */}
+          <div className="mt-12 md:mx-[20vw]">
             <h3 className="mb-4 text-xl font-semibold">Interpersonal Skills</h3>
             <ul className="flex flex-wrap justify-center gap-4">
+              {/* <ul className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6"> */}
               {config.skills.interpersonal.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium text-gray-700"
+                  className="text-md font-small rounded-full bg-gray-200 px-4 py-1 text-gray-700"
                 >
                   {skill}
                 </li>
               ))}
             </ul>
           </div>
-        </section> */}
+        </section>
 
         {/* Education */}
         {/* <section id="education" className="mb-20 w-full max-w-3xl">
