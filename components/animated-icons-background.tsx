@@ -64,7 +64,7 @@ export default function AnimatedIconsBackground() {
                 alt="icon"
                 width={50}
                 height={50}
-                className="mr-4 inline-block opacity-5 transition-opacity duration-300 ease-in-out hover:opacity-50"
+                className="mr-4 inline-block opacity-7 transition-opacity duration-300 ease-in-out hover:opacity-50"
                 priority={false}
                 unoptimized={true}
               />

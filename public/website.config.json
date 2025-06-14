@@ -150,11 +150,6 @@
             "name": "Airflow",
             "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/apacheairflow/apacheairflow-original.svg",
             "docs": "https://airflow.apache.org/docs/"
-          },
-          {
-            "name": "ECS",
-            "icon": "https://raw.githubusercontent.com/wavefrontHQ/docs/refs/heads/master/images/aws_ecs.png",
-            "docs": "https://aws.amazon.com/ecs/"
           }
         ]
       },
@@ -212,8 +207,12 @@
             "name": "PostgresSQL",
             "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postgresql/postgresql-original.svg",
             "docs": "https://www.postgresql.org/docs/"
+          },
+          {
+            "name": "ECS",
+            "icon": "https://raw.githubusercontent.com/wavefrontHQ/docs/refs/heads/master/images/aws_ecs.png",
+            "docs": "https://aws.amazon.com/ecs/"
           }
-        ]
       },
       {
         "id": "platforms-productivity",
