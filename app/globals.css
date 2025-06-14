@@ -121,15 +121,16 @@
   }
 }
 
-@keyframes slideLeft {
+@keyframes slide-left {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-1000px);
   }
 }
-
 .animate-slide-left {
-  animation: slideLeft 30s linear infinite;
+  will-change: transform;
+  display: inline-block;
+  animation: slide-left 40s linear infinite;
 }
