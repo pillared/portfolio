@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import defaultConfigJson from "@/lib/config/default.config.json";
-import { Toaster } from "@/components/ui/sonner";
 import { ReactNode } from "react";
 import LayoutProvider from "./layout-provider";
 

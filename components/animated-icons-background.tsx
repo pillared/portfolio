@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useConfigStore } from "@/lib/stores/useConfigStore";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default function AnimatedIconsBackground() {
   const config = useConfigStore((state) => state.config);
 
   // Memoize icon extraction
-  const icons = React.useMemo(() => {
+  const icons = useMemo(() => {
     if (!config) return [];
 
     return config.skills.technical.flatMap((techSkill) =>
@@ -18,9 +18,9 @@ export default function AnimatedIconsBackground() {
   }, [config]);
 
   // Calculate number of rows just once or on resize
-  const [numRows, setNumRows] = React.useState(0);
+  const [numRows, setNumRows] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     function updateNumRows() {
       setNumRows(Math.ceil(window.innerHeight / 64)); // rowHeight = 64
     }
@@ -31,7 +31,7 @@ export default function AnimatedIconsBackground() {
   }, []);
 
   // Combine icons
-  const iconsDoubled = React.useMemo(() => [...icons, ...icons], [icons]);
+  const iconsDoubled = useMemo(() => [...icons, ...icons], [icons]);
 
   // Calculate total width for the animation
   const iconWidthWithMargin = 50 + 16;
