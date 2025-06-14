@@ -1,57 +1,10 @@
 // lib/stores/useConfigStore.ts
 import { create } from "zustand";
 import { WebsiteConfig } from "@/lib/config/types";
-
 interface ConfigState {
   config: WebsiteConfig;
   loading: boolean;
   fetchConfig: () => Promise<void>;
-}
-
-export interface SkillItem {
-  name: string;
-  icon: string;
-  docs: string;
-}
-
-export interface TechnicalSkills {
-  id: string;
-  name: string;
-  items: SkillItem[];
-}
-
-export interface Biography {
-  details: string;
-}
-
-export interface Skills {
-  technical: TechnicalSkills[];
-  interpersonal: string[];
-}
-
-export type Education = {
-  id: string;
-  name: string;
-  educationType: string;
-  degree: string;
-  degreeCategory: string;
-  major: string;
-  concentration: string;
-  years: string;
-  relevantCoursework: string[];
-};
-
-export interface WebsiteConfig {
-  name: string;
-  description: string;
-  distiguishers: string[];
-  biography: Biography;
-  skills: Skills;
-  education: Education[];
-  privacyPolicyUrl: string;
-  termsOfUseUrl: string;
-  email: string;
-  copyright: string;
 }
 
 const defaultConfig: WebsiteConfig = {
