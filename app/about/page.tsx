@@ -30,7 +30,7 @@ export default function About() {
           <h2 className="mb-8 text-3xl font-semibold">Skills</h2>
 
           {/* Technical Skills */}
-          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
             {config.skills.technical.map((skillGroup) => (
               <div
                 key={skillGroup.id}
