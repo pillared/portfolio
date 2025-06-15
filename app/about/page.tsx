@@ -39,9 +39,12 @@ export default function About() {
                 <h3 className="mb-4 text-xl font-semibold">
                   {skillGroup.name}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="grid grid-cols-1 space-y-2 lg:grid-cols-2 lg:items-center">
                   {skillGroup.items.map(({ name, icon, docs }) => (
-                    <li key={name} className="flex items-center gap-2">
+                    <li
+                      key={name}
+                      className="flex items-center gap-2 pl-16 lg:pl-18"
+                    >
                       <Image
                         src={icon}
                         width={32}
