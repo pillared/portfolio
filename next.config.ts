@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   basePath: "/portfolio",
+  assetPrefix: "/portfolio/",
+  output: "export",
   images: {
     domains: [
       "raw.githubusercontent.com",
@@ -12,4 +14,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
