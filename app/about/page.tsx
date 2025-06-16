@@ -15,10 +15,7 @@ export default function About() {
     <main className="p-4">
       <div className="mx-auto flex flex-col items-center p-4 text-center">
         {/* Biography */}
-        <section
-          id=""
-          className="flex min-h-[80vh] max-w-4xl flex-col items-center md:pt-[20vh]"
-        >
+        <section className="flex min-h-[85vh] max-w-4xl flex-col items-center md:pt-[20vh]">
           <h1 className="text-4xl font-semibold">Biography</h1>
           <p className="mt-4 text-lg leading-relaxed">
             {config.biography.details}
@@ -95,7 +92,6 @@ export default function About() {
               name,
               location,
               educationType,
-              degree,
               degreeCategory,
               major,
               concentration,

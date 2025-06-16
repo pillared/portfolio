@@ -1,6 +1,7 @@
 "use client";
+import React, { useEffect } from "react";
+import { useConfigStore } from "@/lib/stores/useConfigStore";
 
-import * as React from "react";
 import Link from "next/link";
 import {
   HomeIcon,
@@ -24,6 +25,12 @@ import {
 } from "@/components/ui/navigation-menu";
 
 export function Navigation() {
+  const { fetchConfig, config } = useConfigStore();
+
+  useEffect(() => {
+    fetchConfig();
+  }, [fetchConfig]);
+
   return (
     <div className="flex h-[10vh] w-screen items-center justify-center md:justify-start">
       <NavigationMenu viewport={false}>
@@ -49,10 +56,7 @@ export function Navigation() {
               <ul className="flex grid w-[200px] flex-col gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link
-                      href="/about#biography"
-                      className="flex-row items-center gap-2"
-                    >
+                    <Link href="/about" className="flex-row items-center gap-2">
                       <UserIcon />
                       Biography
                     </Link>
@@ -106,7 +110,10 @@ export function Navigation() {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link href="/contact" className="flex-row items-center gap-2">
+              <Link
+                href={`mailto:${config.email}`}
+                className="flex-row items-center gap-2"
+              >
                 <MailIcon />
                 Contact
               </Link>

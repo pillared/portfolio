@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: "/portfolio",
   images: {
     domains: [
       "raw.githubusercontent.com",

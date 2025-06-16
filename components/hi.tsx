@@ -13,7 +13,7 @@ export function Hi() {
   }, [fetchConfig]);
 
   return (
-    <section className="align-items m-8 flex items-center justify-between">
+    <section className="align-items m-8 flex h-full items-center justify-between">
       <div className="ml-16">
         <h1 className="text-6xl font-semibold">Hello,</h1>
         <h2 className="text-2xl font-semibold">My name is {config.name}</h2>
@@ -31,7 +31,7 @@ export function Hi() {
       <div className="mr-16">
         {/* Insert picture here */}
         <Image
-          src="/globe.svg"
+          src="/portfolio/globe.svg"
           width={16}
           height={16}
           alt="Profile"
