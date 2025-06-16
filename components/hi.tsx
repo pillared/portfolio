@@ -31,7 +31,7 @@ export function Hi() {
       <div className="mr-16">
         {/* Insert picture here */}
         <Image
-          src="/portfolio/globe.svg"
+          src="/globe.svg"
           width={16}
           height={16}
           alt="Profile"

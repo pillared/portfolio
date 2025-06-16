@@ -30,7 +30,7 @@ export const useConfigStore = create<ConfigState>((set) => ({
   fetchConfig: async () => {
     set({ loading: true });
     try {
-      const response = await fetch("/portfolio/website.config.json");
+      const response = await fetch("/website.config.json");
 
       if (response.status === 404) {
         set({ loading: false });
