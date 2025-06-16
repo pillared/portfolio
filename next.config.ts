@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   assetPrefix: "/portfolio/",
   output: "export",
   images: {
+    unoptimized: true,
     domains: [
       "raw.githubusercontent.com",
       "avatars.githubusercontent.com",
