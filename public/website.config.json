@@ -17,7 +17,46 @@
   "biography": {
     "details": "I’m a passionate developer who loves turning ideas into functional, thoughtful digital experiences. Whether it’s designing a clean UI or solving a tough backend challenge, I enjoy the process of figuring things out and making them work smoothly. My approach is a mix of creativity, careful problem-solving, and a genuine curiosity for new technologies. Above all, I care about building things that make a difference — for users, for teammates, and for the people who rely on them."
   },
-
+  "experience": [
+    {
+      "id": 1,
+      "company": "Dell Technologies",
+      "title": "Senior Software Engineer",
+      "role": "AIML Platform Engineer",
+      "timeline": "Mar 2025 - Present",
+      "description": [
+        "Led initiatives for designing and developing a centralized AI platform that streamlines access to machine learning tools and services across the enterprise.",
+        "Contribute to full-stack platform roadmap, focusing on scalability, resiliency, and ease of use for data science and ML engineers.",
+        "Implement and improve platform APIs, automation, and developer experience, reducing friction in delivering ML workloads to production."
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Dell Technologies",
+      "title": "Software Engineer II",
+      "role": "AIML Observability Engineer",
+      "timeline": "Feb 2023 - Feb 2025",
+      "description": [
+        "Led efforts to enhance observability across AI/ML infrastructure, delivering capabilities for monitoring, logging, and tracing to support large-scale data operations.",
+        "Developed and maintained data pipelines to collect and process platform metrics, ensuring reliability and high availability.",
+        "Built dashboards and alerting systems to provide actionable insights and support system health and performance.",
+        "Supported ongoing optimization of monitoring systems to improve issue detection, root cause analysis, and system transparency."
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Dell Technologies",
+      "title": "Software Engineer I",
+      "role": "AIML Platform Engineer",
+      "timeline": "Aug 2021 - Jan 2023",
+      "description": [
+        "Managed and supported infrastructure for AI development environments using container orchestration and automation tools.",
+        "Developed and integrated APIs for automating workspace provisioning and lifecycle management.",
+        "Improved CI/CD workflows by enhancing pipeline configurations, leading to faster and more reliable deployments.",
+        "Provided technical support for platform users, resolving issues related to environment setup and usage."
+      ]
+    }
+  ],
   "skills": {
     "technical": [
       {

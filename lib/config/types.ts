@@ -6,6 +6,15 @@ export interface SkillItem {
   docs: string;
 }
 
+export interface ExperienceItem {
+  id: number;
+  company: string;
+  title: string;
+  role: string;
+  timeline: string;
+  description: string[];
+}
+
 export interface TechnicalSkills {
   id: string;
   name: string;
@@ -40,6 +49,7 @@ export interface WebsiteConfig {
   description: string;
   distinguishers: string[];
   biography: Biography;
+  experience: ExperienceItem[];
   skills: Skills;
   education: Education[];
   privacyPolicyUrl: string;

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useConfigStore } from "@/lib/stores/useConfigStore";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
   const { fetchConfig, config } = useConfigStore();
@@ -22,9 +23,39 @@ export default function About() {
           </p>
         </section>
         <Separator />
+        {/* { Experience } */}
+        <section id="experience" className="text-foreground mx-8 w-full pb-12">
+          <h1 className="my-8 text-3xl font-semibold">Experience</h1>
+          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+            {config.experience.map((item) => (
+              <Card key={item.id} className="rounded-2xl p-4 shadow-md">
+                <CardContent>
+                  <h3 className="text-2xl font-semibold">{item.title}</h3>
+                  <p className="text-gray-500">
+                    {item.role} — {item.company}
+                  </p>
+                  <span className="mt-2 block text-gray-400">
+                    {item.timeline}
+                  </span>
+                  <ul className="ml-5list-inside mt-4 list-disc space-y-2">
+                    {item.description.map((desc: string, idx: number) => (
+                      <li key={idx} className="text-left text-gray-600">
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+        <Separator />
         {/* Skills */}
-        <section id="skills" className="text-foreground mx-8 w-full py-10">
-          <h2 className="mb-8 text-3xl font-semibold">Skills</h2>
+        <section
+          id="skills"
+          className="text-foreground y-10 mx-8 h-full w-full"
+        >
+          <h2 className="my-12 text-3xl font-semibold">Skills</h2>
 
           {/* Technical Skills */}
           <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">

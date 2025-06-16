@@ -14,6 +14,7 @@ const defaultConfig: WebsiteConfig = {
   description: "",
   distinguishers: [],
   biography: { details: "" },
+  experience: [],
   skills: {
     technical: [],
     interpersonal: [],
