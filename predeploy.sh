@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Run this in your project root, after `next export`
 
 echo "Predeploy initializing."

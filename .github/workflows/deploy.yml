@@ -44,7 +44,7 @@ jobs:
         run: pnpm install
 
       - name: Run predeploy script
-        run: sh predeploy.sh
+        run: bash predeploy.sh
 
       - name: Setup Pages
         id: setup_pages
