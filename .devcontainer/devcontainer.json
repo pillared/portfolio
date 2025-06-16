@@ -1,0 +1,51 @@
+{
+  "name": "Next.js Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.rulers": [
+          80
+        ],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "always"
+        },
+        "files.autoSave": "afterDelay"
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "editorconfig.editorconfig",
+        "unifiedjs.vscode-mdx",
+        "eamodio.gitlens"
+      ]
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js Dev Server"
+    }
+  },
+  "updateRemoteUserUID": true,
+  // "remoteEnv": {
+  //   "SSH_AUTH_SOCK": "/ssh-agent"
+  // },
+  "remoteUser": "node",
+  "mounts": [
+    "source=${env:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind",
+    "source=${env:HOME}/.ssh,target=/home/node/.ssh,type=bind",
+    // "source=${env:SSH_AUTH_SOCK},target=/ssh-agent,consistency=cached"
+
+  ]
+}

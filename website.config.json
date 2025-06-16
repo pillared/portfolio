@@ -1,0 +1,285 @@
+{
+  "name": "Anthony",
+  "description": "Hello world. My name is",
+  "distinguishers": [
+    "a Software Engineer.",
+    "a Tinkerer.",
+    "a Leader.",
+    "a Problem Solver.",
+    "an Innovator.",
+    "a Team Player.",
+    "a Mentor.",
+    "a Continuous Learner.",
+    "a Communicator.",
+    "Adaptable.",
+    "a Strategic Thinker."
+  ],
+  "biography": {
+    "details": "I’m a passionate developer who loves turning ideas into functional, thoughtful digital experiences. Whether it’s designing a clean UI or solving a tough backend challenge, I enjoy the process of figuring things out and making them work smoothly. My approach is a mix of creativity, careful problem-solving, and a genuine curiosity for new technologies. Above all, I care about building things that make a difference — for users, for teammates, and for the people who rely on them."
+  },
+
+  "skills": {
+    "technical": [
+      {
+        "id": "languages-scripting",
+        "name": "Languages & Scripting",
+        "items": [
+          {
+            "name": "Python",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/python/python-original.svg",
+            "docs": "https://docs.python.org/"
+          },
+          {
+            "name": "C#",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/csharp/csharp-original.svg",
+            "docs": "https://learn.microsoft.com/dotnet/csharp/"
+          },
+          {
+            "name": "Java",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/java/java-original.svg",
+            "docs": "https://docs.oracle.com/javase/"
+          },
+          {
+            "name": "PHP",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/php/php-original.svg",
+            "docs": "https://www.php.net/docs.php"
+          },
+          {
+            "name": "Bash",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/bash/bash-original.svg",
+            "docs": "https://www.gnu.org/software/bash/manual/"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg",
+            "docs": "https://www.typescriptlang.org/docs/"
+          },
+          {
+            "name": "YAML",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/yaml/yaml-original.svg",
+            "docs": "https://yaml.org/"
+          },
+          {
+            "name": "JSON",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/json/json-original.svg",
+            "docs": "https://www.json.org/json-en.html"
+          }
+        ]
+      },
+      {
+        "id": "frameworks-libraries",
+        "name": "Frameworks & Libraries",
+        "items": [
+          {
+            "name": "React",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/react/react-original.svg",
+            "docs": "https://reactjs.org/"
+          },
+          {
+            "name": "Next.js",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nextjs/nextjs-original.svg",
+            "docs": "https://nextjs.org/docs/"
+          },
+          {
+            "name": "Tailwind",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/tailwindcss/tailwindcss-original.svg",
+            "docs": "https://tailwindcss.com/docs/"
+          },
+          {
+            "name": "Pandas",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/pandas/pandas-original.svg",
+            "docs": "https://pandas.pydata.org/docs/"
+          },
+          {
+            "name": "Plotly",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/plotly/plotly-original.svg",
+            "docs": "https://plotly.com/python/"
+          },
+          {
+            "name": "Prisma",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/prisma/prisma-original.svg",
+            "docs": "https://www.prisma.io/docs/"
+          },
+          {
+            "name": "Jupyter",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/jupyter/jupyter-original.svg",
+            "docs": "https://jupyter.org/"
+          }
+        ]
+      },
+      {
+        "id": "devops-tools",
+        "name": "DevOps & Tools",
+        "items": [
+          {
+            "name": "Kubernetes",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/kubernetes/kubernetes-original.svg",
+            "docs": "https://kubernetes.io/docs/"
+          },
+          {
+            "name": "Helm",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/helm/helm-original.svg",
+            "docs": "https://helm.sh/docs/"
+          },
+          {
+            "name": "Docker",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/docker/docker-original.svg",
+            "docs": "https://docs.docker.com/"
+          },
+          {
+            "name": "Terraform",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/terraform/terraform-original.svg",
+            "docs": "https://www.terraform.io/docs/"
+          },
+          {
+            "name": "Git",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/git/git-original.svg",
+            "docs": "https://git-scm.com/doc"
+          },
+          {
+            "name": "GitLab",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/gitlab/gitlab-original.svg",
+            "docs": "https://docs.gitlab.com/"
+          },
+          {
+            "name": "Postman",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postman/postman-original.svg",
+            "docs": "https://learning.postman.com/docs/"
+          },
+          {
+            "name": "Airflow",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/apacheairflow/apacheairflow-original.svg",
+            "docs": "https://airflow.apache.org/docs/"
+          }
+        ]
+      },
+      {
+        "id": "monitoring-observability",
+        "name": "Monitoring & Observability",
+        "items": [
+          {
+            "name": "Prometheus",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/prometheus/prometheus-original.svg",
+            "docs": "https://prometheus.io/docs/"
+          },
+          {
+            "name": "Grafana",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/grafana/grafana-original.svg",
+            "docs": "https://grafana.com/docs/"
+          },
+          {
+            "name": "Loki",
+            "icon": "https://raw.githubusercontent.com/grafana/loki/refs/heads/main/docs/sources/logo.png",
+            "docs": "https://grafana.com/docs/loki/"
+          },
+          {
+            "name": "Alloy",
+            "icon": "https://raw.githubusercontent.com/grafana/alloy/refs/heads/main/docs/sources/assets/alloy_icon_orange.svg",
+            "docs": "https://grafana.com/docs/alloy/"
+          },
+          {
+            "name": "Dynatrace",
+            "icon": "https://avatars.githubusercontent.com/u/6412311?s=200&v=4",
+            "docs": "https://www.dynatrace.com/docs/"
+          },
+          {
+            "name": "Splunk",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/splunk/splunk-original-wordmark.svg",
+            "docs": "https://docs.splunk.com/"
+          },
+          {
+            "name": "Wavefront",
+            "icon": "https://raw.githubusercontent.com/wavefrontHQ/docs/refs/heads/master/images/wavefront-simple-logo.png",
+            "docs": "https://docs.wavefront.com/"
+          }
+        ]
+      },
+      {
+        "id": "databases-storage",
+        "name": "Databases & Storage",
+        "items": [
+          {
+            "name": "MongoDB",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/mongodb/mongodb-original.svg",
+            "docs": "https://www.mongodb.com/docs/"
+          },
+          {
+            "name": "PostgresSQL",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postgresql/postgresql-original.svg",
+            "docs": "https://www.postgresql.org/docs/"
+          },
+          {
+            "name": "ECS",
+            "icon": "https://raw.githubusercontent.com/wavefrontHQ/docs/refs/heads/master/images/aws_ecs.png",
+            "docs": "https://aws.amazon.com/ecs/"
+          }
+        ]
+      },
+      {
+        "id": "platforms-productivity",
+        "name": "Platforms & Productivity",
+        "items": [
+          {
+            "name": "Jira",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/jira/jira-original.svg",
+            "docs": "https://www.atlassian.com/software/jira/docs/"
+          },
+          {
+            "name": "ServiceNow",
+            "icon": "https://www.servicenow.com/content/dam/servicenow-assets/images/naas/servicenow-header-logo.svg",
+            "docs": "https://developer.servicenow.com/docs/"
+          },
+          {
+            "name": "Miro",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg",
+            "docs": "https://help.miro.com/"
+          }
+        ]
+      }
+    ],
+    "interpersonal": [
+      "Adaptable",
+      "Communicative",
+      "Critical Thinking",
+      "Curious",
+      "Enthusiastic",
+      "Empathetic",
+      "Hardworking",
+      "Leadership",
+      "Mentoring",
+      "Open-minded",
+      "Quick Learner",
+      "Reliable",
+      "Team Collaboration"
+    ]
+  },
+
+  "education": [
+    {
+      "id": "gsu",
+      "name": "Georgia State",
+      "location": "Atlanta, GA",
+      "educationType": "University",
+      "degree": "Undergraduate",
+      "degreeCategory": "B.Sc.",
+      "major": "Computer Science",
+      "concentration": "Software Engineering",
+      "years": "2017-2021",
+      "relevantCoursework": [
+        "Data Structures & Algorithms",
+        "System-Level Programming",
+        "Artificial Intelligence",
+        "Robotics",
+        "Linear Algebra",
+        "Calculus I, II",
+        "Physics I, II"
+      ],
+      "icon": "https://commkit.gsu.edu/files/2021/05/FlameBar_2RGB.png"
+    }
+  ],
+
+  "privacyPolicyUrl": "/privacy-policy",
+  "termsOfUseUrl": "/terms-of-service",
+  "email": "anthony.asilo@outlook.com",
+  "copyright": "Copyright © 2025 Asilo Corp. All rights reserved."
+}
