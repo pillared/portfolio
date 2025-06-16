@@ -5,6 +5,7 @@ import "./globals.css";
 import defaultConfigJson from "@/lib/config/default.config.json";
 import { ReactNode } from "react";
 import LayoutProvider from "./layout-provider";
+import { PROJECT_DIR } from "@/lib/config/constants";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "700"],
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   title: defaultConfigJson.name,
   description: defaultConfigJson.description,
   icons: {
-    icon: ["/favicon.ico"],
-    apple: ["/apple-icon.png"],
+    icon: [`${PROJECT_DIR}/favicon.ico`],
+    apple: [`${PROJECT_DIR}/apple-icon.png`],
   },
 };
 

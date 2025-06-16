@@ -1,6 +1,8 @@
 // lib/stores/useConfigStore.ts
 import { create } from "zustand";
 import { WebsiteConfig } from "@/lib/config/types";
+import { PROJECT_DIR } from "../config/constants";
+
 interface ConfigState {
   config: WebsiteConfig;
   loading: boolean;
@@ -30,7 +32,7 @@ export const useConfigStore = create<ConfigState>((set) => ({
   fetchConfig: async () => {
     set({ loading: true });
     try {
-      const response = await fetch("/website.config.json");
+      const response = await fetch(`${PROJECT_DIR}/website.config.json`);
 
       if (response.status === 404) {
         set({ loading: false });

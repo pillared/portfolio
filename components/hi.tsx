@@ -4,6 +4,7 @@ import { useConfigStore } from "@/lib/stores/useConfigStore";
 import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
+import { PROJECT_DIR } from "@/lib/config/constants";
 
 export function Hi() {
   const { fetchConfig, config } = useConfigStore();
@@ -31,7 +32,7 @@ export function Hi() {
       <div className="mr-16">
         {/* Insert picture here */}
         <Image
-          src="/globe.svg"
+          src={`${PROJECT_DIR}/globe.svg`}
           width={16}
           height={16}
           alt="Profile"
