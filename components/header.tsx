@@ -3,7 +3,7 @@ import { ThemeModeToggle } from "@/components/theme-mode-toggle";
 
 export default async function Header() {
   return (
-    <div className="justify-items space-between top-0 left-0 z-50 m-6 flex w-full items-center px-6">
+    <div className="justify-items top-0 left-0 z-50 m-6 flex items-center px-6">
       <Navigation />
       <ThemeModeToggle />
     </div>

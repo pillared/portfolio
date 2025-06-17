@@ -24,22 +24,33 @@ export default function About() {
         </section>
         <Separator />
         {/* { Experience } */}
-        <section id="experience" className="text-foreground mx-8 w-full pb-12">
+        <section
+          id="experience"
+          className="text-foreground mx-8 min-h-screen w-full pb-12"
+        >
           <h1 className="my-8 text-3xl font-semibold">Experience</h1>
           <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
             {config.experience.map((item) => (
-              <Card key={item.id} className="rounded-2xl p-4 shadow-md">
+              <Card
+                key={item.id}
+                className="rounded-2xl py-8 shadow shadow-md transition-colors duration-300 hover:bg-gray-50 dark:hover:bg-gray-600"
+              >
                 <CardContent>
-                  <h3 className="text-2xl font-semibold">{item.title}</h3>
-                  <p className="text-gray-500">
+                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-800 dark:text-gray-200">
                     {item.role} — {item.company}
                   </p>
-                  <span className="mt-2 block text-gray-400">
+                  <span className="mt-2 block text-gray-500 dark:text-gray-400">
                     {item.timeline}
                   </span>
-                  <ul className="ml-5list-inside mt-4 list-disc space-y-2">
+                  <ul className="mt-4 list-disc space-y-2 px-8">
                     {item.description.map((desc: string, idx: number) => (
-                      <li key={idx} className="text-left text-gray-600">
+                      <li
+                        key={idx}
+                        className="ms-2 list-disc text-left text-wrap text-gray-700 dark:text-gray-300"
+                      >
                         {desc}
                       </li>
                     ))}
@@ -53,7 +64,7 @@ export default function About() {
         {/* Skills */}
         <section
           id="skills"
-          className="text-foreground y-10 mx-8 h-full w-full"
+          className="text-foreground y-10 mx-8 min-h-screen w-full pb-12"
         >
           <h2 className="my-12 text-3xl font-semibold">Skills</h2>
 
