@@ -112,6 +112,10 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
 .container {
   overflow: hidden;
   width: 100vw; /* or whatever container width */
