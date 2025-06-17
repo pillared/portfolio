@@ -9,7 +9,7 @@ interface LayoutProviderProps {
 export default function LayoutProvider({ children }: LayoutProviderProps) {
   return (
     <>
-      <div className="relative">
+      <div>
         <AnimatedIconsBackground />
         <Header />
       </div>
