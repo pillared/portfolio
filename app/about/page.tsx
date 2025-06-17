@@ -33,7 +33,7 @@ export default function About() {
             {config.experience.map((item) => (
               <Card
                 key={item.id}
-                className="rounded-2xl py-8 shadow shadow-md transition-colors duration-300 hover:bg-gray-50 dark:hover:bg-gray-600"
+                className="rounded-2xl py-8 shadow shadow-md transition-colors duration-300 hover:bg-blue-100 dark:hover:bg-gray-600"
               >
                 <CardContent>
                   <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
