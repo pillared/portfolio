@@ -88,15 +88,15 @@ export default function About() {
                       className="justify-content-center flex w-full items-center justify-items-start gap-2 rounded-lg bg-gray-100 hover:bg-blue-100 active:bg-blue-200 sm:justify-start dark:bg-gray-800 dark:hover:bg-blue-600 dark:active:bg-blue-500"
                     >
                       <li className="justify-content-center flex w-full items-center space-y-3 p-3">
-                        <span className="w-full items-center space-y-3 p-3">
+                        <span className="w-full items-center justify-center space-y-3 p-3">
                           <Image
                             src={icon}
                             width={32}
                             height={32}
                             alt={`${name} icon`}
-                            className="h-16 w-16 w-full items-center"
+                            className="mx-auto flex h-16 w-16 items-center"
                           />
-                          <p className="text-gray-800 dark:text-gray-50 dark:text-gray-300">
+                          <p className="text-sm text-gray-800 dark:text-gray-50 dark:text-gray-300">
                             {name}
                           </p>
                         </span>
