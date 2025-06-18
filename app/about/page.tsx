@@ -69,7 +69,7 @@ export default function About() {
           <h2 className="my-12 text-3xl font-semibold">Skills</h2>
 
           {/* Technical Skills */}
-          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:px-30">
             {config.skills.technical.map((skillGroup) => (
               <div
                 key={skillGroup.id}
@@ -87,19 +87,19 @@ export default function About() {
                       rel="noopener noreferrer"
                       className="justify-content-center flex w-full items-center justify-items-start gap-2 rounded-lg bg-gray-100 hover:bg-blue-100 active:bg-blue-200 sm:justify-start dark:bg-gray-800 dark:hover:bg-blue-600 dark:active:bg-blue-500"
                     >
-                      <li className="justify-content-center flex w-full items-center space-y-3 p-3">
-                        <span className="w-full items-center justify-center space-y-3 p-3">
-                          <Image
-                            src={icon}
-                            width={32}
-                            height={32}
-                            alt={`${name} icon`}
-                            className="mx-auto flex h-16 w-16 items-center"
-                          />
-                          <p className="text-sm text-gray-800 dark:text-gray-50 dark:text-gray-300">
-                            {name}
-                          </p>
-                        </span>
+                      <li className="justify-content-center flex w-full flex-col items-center space-y-3 p-3">
+                        {/* <span className="w-full items-center justify-center space-y-3 p-3"> */}
+                        <Image
+                          src={icon}
+                          width={32}
+                          height={32}
+                          alt={`${name} icon`}
+                          className="m-2 flex h-16 w-16 items-center"
+                        />
+                        {/* </span> */}
+                        <p className="w-full items-center text-sm text-gray-800 dark:text-gray-50 dark:text-gray-300">
+                          {name}
+                        </p>
                       </li>
                     </a>
                   ))}
