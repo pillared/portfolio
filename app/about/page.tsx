@@ -75,10 +75,10 @@ export default function About() {
                 key={skillGroup.id}
                 className="mb-2 border-spacing-4 rounded-md border-2 border-dashed border-blue-400 p-6 dark:border-gray-700"
               >
-                <h3 className="mb-8 text-xl font-semibold">
+                <h3 className="mt-2 mb-8 text-xl font-semibold">
                   {skillGroup.name}
                 </h3>
-                <ul className="justify-content-center grid grid-cols-2 justify-items-start gap-4 px-4 lg:grid-cols-2">
+                <ul className="justify-content-center mb-4 grid grid-cols-2 justify-items-start gap-4 px-4 lg:grid-cols-2">
                   {skillGroup.items.map(({ name, icon, docs }) => (
                     <a
                       key={name}
