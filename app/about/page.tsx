@@ -29,7 +29,7 @@ export default function About() {
           className="text-foreground mx-8 min-h-screen w-full pb-12"
         >
           <h1 className="my-8 text-3xl font-semibold">Experience</h1>
-          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:p-30">
             {config.experience.map((item) => (
               <Card
                 key={item.id}
