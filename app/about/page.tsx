@@ -75,33 +75,33 @@ export default function About() {
                 key={skillGroup.id}
                 className="mb-2 border-spacing-4 rounded-md border-2 border-dashed border-blue-400 p-6 dark:border-gray-700"
               >
-                <h3 className="mb-4 text-xl font-semibold">
+                <h3 className="mb-8 text-xl font-semibold">
                   {skillGroup.name}
                 </h3>
                 <ul className="justify-content-center grid grid-cols-2 justify-items-start gap-4 px-4 lg:grid-cols-2">
                   {skillGroup.items.map(({ name, icon, docs }) => (
-                    <li
+                    <a
                       key={name}
-                      className="justify-content-center flex w-full items-center justify-items-start gap-2 rounded-lg bg-gray-100 sm:justify-start dark:bg-gray-800"
+                      href={docs}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="justify-content-center flex w-full items-center justify-items-start gap-2 rounded-lg bg-gray-100 hover:bg-blue-100 active:bg-blue-200 sm:justify-start dark:bg-gray-800 dark:hover:bg-blue-600 dark:active:bg-blue-500"
                     >
-                      <span className="justify-content-center flex w-full flex-col items-center space-y-3 p-3">
-                        <Image
-                          src={icon}
-                          width={32}
-                          height={32}
-                          alt={`${name} icon`}
-                          className="h-16 w-16"
-                        />
-                        <a
-                          href={docs}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-gray-800 hover:underline dark:text-gray-50 dark:text-gray-300"
-                        >
-                          {name}
-                        </a>
-                      </span>
-                    </li>
+                      <li className="justify-content-center flex w-full items-center space-y-3 p-3">
+                        <span className="w-full items-center space-y-3 p-3">
+                          <Image
+                            src={icon}
+                            width={32}
+                            height={32}
+                            alt={`${name} icon`}
+                            className="h-16 w-16 w-full items-center"
+                          />
+                          <p className="text-gray-800 dark:text-gray-50 dark:text-gray-300">
+                            {name}
+                          </p>
+                        </span>
+                      </li>
+                    </a>
                   ))}
                 </ul>
               </div>
