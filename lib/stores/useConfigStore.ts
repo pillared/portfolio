@@ -13,7 +13,9 @@ const defaultConfig: WebsiteConfig = {
   name: "",
   description: "",
   distinguishers: [],
-  biography: { details: "" },
+  biography: {
+    details: "",
+  },
   experience: [],
   skills: {
     technical: [],
@@ -31,12 +33,16 @@ export const useConfigStore = create<ConfigState>((set) => ({
   loading: false,
 
   fetchConfig: async () => {
-    set({ loading: true });
+    set({
+      loading: true,
+    });
     try {
       const response = await fetch(`${PROJECT_DIR}/website.config.json`);
 
       if (response.status === 404) {
-        set({ loading: false });
+        set({
+          loading: false,
+        });
         return;
       }
 
@@ -45,10 +51,15 @@ export const useConfigStore = create<ConfigState>((set) => ({
       }
 
       const config: WebsiteConfig = await response.json();
-      set({ config, loading: false });
+      set({
+        config,
+        loading: false,
+      });
     } catch (error) {
       console.error("Zustand config fetch error:", error);
-      set({ loading: false });
+      set({
+        loading: false,
+      });
     }
   },
 }));
