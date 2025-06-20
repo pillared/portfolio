@@ -38,7 +38,7 @@ export default function AnimatedIconsBackground() {
   const totalWidth = icons.length * iconWidthWithMargin * 2;
 
   return (
-    <div className="pointer-events-none absolute inset-0 z-0 h-screen select-none">
+    <div className="pointer-events-none absolute inset-0 z-[-1] h-screen select-none">
       {[...Array(numRows)].map((_, rowIndex) => (
         <div
           key={rowIndex}

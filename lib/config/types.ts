@@ -44,6 +44,21 @@ export type Education = {
   icon: string;
 };
 
+export interface Project {
+  id: string;
+  name: string;
+  description: string;
+  technologies: string[];
+  role: string;
+  learnings: string;
+  screenshots: string[]; // URLs to images or GIFs
+  demoLink: string | null; // Could be null if no demo
+  repoLink: string;
+  blogPost: string;
+  timeline: string;
+  impact: string;
+}
+
 export interface WebsiteConfig {
   name: string;
   description: string;
@@ -52,6 +67,7 @@ export interface WebsiteConfig {
   experience: ExperienceItem[];
   skills: Skills;
   education: Education[];
+  projects: Project[];
   privacyPolicyUrl: string;
   termsOfUseUrl: string;
   email: string;

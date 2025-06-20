@@ -15,14 +15,14 @@
     "a Strategic Thinker."
   ],
   "biography": {
-    "details": "I’m a passionate developer who loves turning ideas into functional, thoughtful digital experiences. Whether it’s designing a clean UI or solving a tough backend challenge, I enjoy the process of figuring things out and making them work smoothly. My approach is a mix of creativity, careful problem-solving, and a genuine curiosity for new technologies. Above all, I care about building things that make a difference — for users, for teammates, and for the people who rely on them."
+    "details": "I’m a passionate software engineer with a strong focus on backend development, particularly in building enterprise AI platforms and observability solutions. I excel at designing scalable, reliable systems that solve complex problems and drive meaningful business impact. Recently, I’ve expanded my skill set into frontend and fullstack development, enabling me to contribute across the entire stack. I thrive on tackling challenging technical problems with a blend of creativity, precision, and a deep curiosity for emerging technologies. Outside of work, I stay active and inspired through rock climbing, bouldering, skateboarding, mountain biking, and backpacking. I also enjoy driving and immersing myself in music — whether listening, producing, drumming, or playing bass. These passions keep me balanced and fuel my creativity both on and off the keyboard."
   },
   "experience": [
     {
       "id": 1,
       "company": "Dell Technologies",
       "title": "Senior Software Engineer",
-      "role": "AIML Platform Engineer",
+      "role": "AIML Fullstack Engineer",
       "timeline": "Mar 2025 - Present",
       "description": [
         "Led initiatives for designing and developing a centralized AI platform that streamlines access to machine learning tools and services across the enterprise.",
@@ -79,11 +79,6 @@
             "docs": "https://docs.oracle.com/javase/"
           },
           {
-            "name": "PHP",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/php/php-original.svg",
-            "docs": "https://www.php.net/docs.php"
-          },
-          {
             "name": "Bash",
             "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/bash/bash-original.svg",
             "docs": "https://www.gnu.org/software/bash/manual/"
@@ -92,16 +87,6 @@
             "name": "TypeScript",
             "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg",
             "docs": "https://www.typescriptlang.org/docs/"
-          },
-          {
-            "name": "YAML",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/yaml/yaml-original.svg",
-            "docs": "https://yaml.org/"
-          },
-          {
-            "name": "JSON",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/json/json-original.svg",
-            "docs": "https://www.json.org/json-en.html"
           }
         ]
       },
@@ -314,6 +299,69 @@
         "Physics I, II"
       ],
       "icon": "https://commkit.gsu.edu/files/2021/05/FlameBar_2RGB.png"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "portfolio",
+      "name": "Personal Portfolio Website",
+      "description": "A responsive and modern portfolio site to showcase my projects, skills, and professional background.",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "role": "Designed and developed the site end-to-end, including layout, animations, accessibility, and deployment.",
+      "learnings": "Improved skills in responsive design, UI/UX accessibility, and CI/CD deployment workflows.",
+      "screenshots": [
+        "https://example.com/portfolio-screenshot1.png",
+        "https://example.com/portfolio-screenshot2.gif"
+      ],
+      "demoLink": "https://pillared.github.io/portfolio",
+      "repoLink": "https://github.com/pillared/portfolio",
+      "blogPost": "https://yourblog.com/building-my-portfolio",
+      "timeline": "June 2025",
+      "impact": "Used as a central hub for my professional presence. Helped land interviews and showcase projects clearly."
+    },
+
+    {
+      "id": "budget-tracker",
+      "name": "Budget Tracker - Bank Statement ETL",
+      "description": "A Python ETL pipeline that scans and extracts transaction data from Truist and TD Bank PDF statements using PlumberPDF, then generates financial insights and visualizations with Plotly inside Jupyter Notebook.",
+      "technologies": [
+        "Python",
+        "PlumberPDF",
+        "Pandas",
+        "Plotly",
+        "Jupyter Notebook",
+        "NumPy"
+      ],
+      "role": "Developed the full ETL workflow — implemented PDF parsing with PlumberPDF, transformed raw data using Pandas, and created interactive visualizations with Plotly to provide actionable financial insights.",
+      "learnings": "Gained hands-on experience with PDF data extraction, data cleaning, exploratory data analysis, and interactive plotting in Jupyter. Improved skills in handling messy real-world financial data.",
+      "screenshots": [
+        "https://example.com/screenshots/budget-tracker-etl-1.png",
+        "https://example.com/screenshots/budget-tracker-etl-2.png"
+      ],
+      "demoLink": null,
+      "repoLink": "https://github.com/yourusername/budget-tracker-etl",
+      "blogPost": "https://yourblog.com/etl-for-bank-statement-budget-tracker",
+      "timeline": "January 2025 - February 2025",
+      "impact": "Automated manual bank statement processing, reducing data prep time by 70%. Helped users gain clearer insight into spending habits and cash flow trends."
+    },
+
+    {
+      "id": "4tldir",
+      "name": "4TLDIR",
+      "description": "A decentralized business directory for the Atlanta Web3 community, inspired by Yellow Pages. Enables creators, startups, DAOs, and service providers to list and discover trusted local Web3-friendly businesses.",
+      "technologies": ["MongoDB", "Express.js", "React", "Node.js", "Vercel"],
+      "role": "Lead full-stack developer — built the entire stack from scratch including user auth, listing, and submission flow. Also collaborated with local community members to shape the product vision.",
+      "learnings": "Gained experience building a CRUD-heavy MERN app.",
+      "screenshots": [
+        "https://example.com/screenshots/4tldir-home.png",
+        "https://example.com/screenshots/4tldir-listing.png"
+      ],
+      "demoLink": "https://4tldir.vercel.app",
+      "repoLink": "https://github.com/yourusername/4tldir",
+      "blogPost": "https://yourblog.com/building-4tldir-for-atlanta-web3",
+      "timeline": "April 2025 - May 2025",
+      "impact": "Featured during the Atlanta Web3 Creators Showcase. Used by over 30 community members to list and discover local Web3 projects and freelancers."
     }
   ],
 
