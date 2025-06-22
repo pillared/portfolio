@@ -320,6 +320,32 @@
       "timeline": "June 2025",
       "impact": "Used as a central hub for my professional presence. Helped land interviews and showcase projects clearly."
     },
+    {
+      "id": "home-infra",
+      "name": "Self-Hosted VPN + K3s Infrastructure",
+      "description": "A privacy-focused internal platform using Headscale, Tailscale, and K3s to manage self-hosted services securely over a private mesh network.",
+      "technologies": [
+        "Headscale",
+        "Tailscale",
+        "K3s",
+        "Traefik",
+        "Docker",
+        "Linux",
+        "Jumpbox"
+      ],
+      "role": "Designed and deployed a fully self-hosted infrastructure stack with secure peer coordination, internal DNS, and app routing. Built for zero external dependencies.",
+      "learnings": "Gained hands-on experience with tailnet coordination, Traefik ingress routing, container orchestration using K3s, and secure jumpbox access for remote management.",
+      "screenshots": [
+        "https://example.com/homeinfra-topology.png",
+        "https://example.com/homeinfra-k3s.png",
+        "https://example.com/homeinfra-headscale.png"
+      ],
+      "demoLink": null,
+      "repoLink": null,
+      "blogPost": null,
+      "timeline": "March 2024 – Present",
+      "impact": "In progress. Replacing third-party VPNs and SaaS tools with a zero-trust internal network. Serving as the foundation for future observability, internal development, and secure deployments."
+    },
 
     {
       "id": "budget-tracker",
