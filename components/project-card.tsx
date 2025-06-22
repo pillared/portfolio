@@ -29,7 +29,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
     <Card className="z-0 mx-auto my-6 max-w-lg border border-blue-200 bg-gradient-to-br from-sky-50 to-blue-100 shadow-md transition-all duration-200 hover:shadow-lg dark:border-zinc-700 dark:from-zinc-800 dark:to-gray-900">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-lg text-blue-900 dark:text-blue-200">
+        <CardTitle className="flex items-center gap-2 text-lg text-blue-900 dark:text-orange-700">
           {/* <Sparkles className="h-5 w-5 text-blue-600 dark:text-blue-400" /> */}
           {project.name}
         </CardTitle>
@@ -117,7 +117,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             href={project.demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-gray-300 px-4 py-1 text-sm text-blue-700 hover:bg-green-100 active:bg-green-200 dark:bg-gray-700 dark:text-blue-400 dark:hover:bg-slate-800 dark:active:bg-green-200"
+            className="rounded-full bg-gray-300 px-4 py-1 text-sm text-blue-700 hover:bg-green-100 active:bg-green-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-slate-800 dark:active:bg-green-200"
           >
             Live Demo
           </a>
@@ -127,7 +127,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             href={project.repoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-gray-300 px-4 py-1 text-sm text-blue-700 hover:bg-green-100 active:bg-green-200 dark:bg-gray-700 dark:text-blue-400 dark:hover:bg-slate-800 dark:active:bg-green-200"
+            className="rounded-full bg-gray-300 px-4 py-1 text-sm text-blue-700 hover:bg-green-100 active:bg-green-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-slate-800 dark:active:bg-green-200"
           >
             Source Code
           </a>
@@ -137,7 +137,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             href={project.blogPost}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-gray-300 px-4 py-1 text-sm text-blue-700 hover:bg-green-100 active:bg-green-200 dark:bg-gray-700 dark:text-blue-400 dark:hover:bg-slate-800 dark:active:bg-green-200"
+            className="rounded-full bg-gray-300 px-4 py-1 text-sm text-blue-700 hover:bg-green-100 active:bg-green-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-slate-800 dark:active:bg-green-200"
           >
             Blog Post
           </a>
