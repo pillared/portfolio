@@ -1,0 +1,17 @@
+
+{
+  "name": "YAML",
+  "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/yaml/yaml-original.svg",
+  "docs": "https://yaml.org/"
+},
+{
+  "name": "JSON",
+  "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/json/json-original.svg",
+  "docs": "https://www.json.org/json-en.html"
+}
+
+{
+  "name": "PHP",
+  "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/php/php-original.svg",
+  "docs": "https://www.php.net/docs.php"
+},
