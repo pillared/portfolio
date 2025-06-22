@@ -7,7 +7,7 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
-import Image from "next/image";
+// import Image from "next/image";
 import { BadgeCheck, Code2, Hammer, Lightbulb, Sparkles } from "lucide-react";
 
 interface Project {

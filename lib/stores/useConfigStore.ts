@@ -17,6 +17,7 @@ const defaultConfig: WebsiteConfig = {
     details: "",
   },
   experience: [],
+  projects: [],
   skills: {
     technical: [],
     interpersonal: [],
