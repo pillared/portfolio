@@ -316,7 +316,7 @@
       ],
       "demoLink": "https://pillared.github.io/portfolio",
       "repoLink": "https://github.com/pillared/portfolio",
-      "blogPost": "https://yourblog.com/building-my-portfolio",
+      "blogPost": null,
       "timeline": "June 2025",
       "impact": "Used as a central hub for my professional presence. Helped land interviews and showcase projects clearly."
     },
@@ -340,10 +340,10 @@
         "https://example.com/screenshots/budget-tracker-etl-2.png"
       ],
       "demoLink": null,
-      "repoLink": "https://github.com/yourusername/budget-tracker-etl",
-      "blogPost": "https://yourblog.com/etl-for-bank-statement-budget-tracker",
-      "timeline": "January 2025 - February 2025",
-      "impact": "Automated manual bank statement processing, reducing data prep time by 70%. Helped users gain clearer insight into spending habits and cash flow trends."
+      "repoLink": "https://github.com/pillared/truist-digester",
+      "blogPost": null,
+      "timeline": "August 2023 - December 2023",
+      "impact": "Automated manual bank statement processing, reducing data prep time by 70%. Helped gain clearer insight into spending habits and cash flow trends."
     },
 
     {
@@ -351,17 +351,17 @@
       "name": "4TLDIR",
       "description": "A decentralized business directory for the Atlanta Web3 community, inspired by Yellow Pages. Enables creators, startups, DAOs, and service providers to list and discover trusted local Web3-friendly businesses.",
       "technologies": ["MongoDB", "Express.js", "React", "Node.js", "Vercel"],
-      "role": "Lead full-stack developer — built the entire stack from scratch including user auth, listing, and submission flow. Also collaborated with local community members to shape the product vision.",
+      "role": "Lead full-stack developer — built the entire POC from scratch including user auth, listing, and submission flow. Also collaborated with local community members to shape the product vision.",
       "learnings": "Gained experience building a CRUD-heavy MERN app.",
       "screenshots": [
         "https://example.com/screenshots/4tldir-home.png",
         "https://example.com/screenshots/4tldir-listing.png"
       ],
       "demoLink": "https://4tldir.vercel.app",
-      "repoLink": "https://github.com/yourusername/4tldir",
-      "blogPost": "https://yourblog.com/building-4tldir-for-atlanta-web3",
-      "timeline": "April 2025 - May 2025",
-      "impact": "Featured during the Atlanta Web3 Creators Showcase. Used by over 30 community members to list and discover local Web3 projects and freelancers."
+      "repoLink": "https://github.com/pillared/atldir-backend",
+      "blogPost": null,
+      "timeline": "January 2022 - March 2022",
+      "impact": "Featured during the Atlanta Web3 Creators Showcase. Used by 5+ community members to list and discover local Web3 projects and freelancers."
     }
   ],
 
