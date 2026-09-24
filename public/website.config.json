@@ -22,16 +22,36 @@
       "id": 1,
       "company": "Dell Technologies",
       "title": "Senior Software Engineer",
-      "role": "AIML Fullstack Engineer",
-      "timeline": "Mar 2025 - Present",
+      "role": "LLMOps Engineer",
+      "timeline": "Aug 2026 - Present",
+      "description": [
+        "Deploy and operate open-source and cloud LLMs on Kubernetes GPU infrastructure behind a unified gateway handling routing, authentication, and access control.",
+        "Own performance and load testing across models and serving stacks (vLLM, SGLang), benchmarking latency (TTFT, TPOT), concurrency, throughput, and cost to drive capacity planning."
+      ],
+      "tech": ["vLLM", "SGLang", "Kubernetes", "Helm", "Python", "Grafana"]
+    },
+    {
+      "id": 2,
+      "company": "Dell Technologies",
+      "title": "Senior Software Engineer",
+      "role": "AI/ML Fullstack Engineer",
+      "timeline": "Feb 2025 - Jul 2026",
       "description": [
         "Led initiatives for designing and developing a centralized AI platform that streamlines access to machine learning tools and services across the enterprise.",
         "Contribute to full-stack platform roadmap, focusing on scalability, resiliency, and ease of use for data science and ML engineers.",
         "Implement and improve platform APIs, automation, and developer experience, reducing friction in delivering ML workloads to production."
+      ],
+      "tech": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Python",
+        "PostgreSQL"
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "company": "Dell Technologies",
       "title": "Software Engineer II",
       "role": "AIML Observability Engineer",
@@ -41,10 +61,18 @@
         "Developed and maintained data pipelines to collect and process platform metrics, ensuring reliability and high availability.",
         "Built dashboards and alerting systems to provide actionable insights and support system health and performance.",
         "Supported ongoing optimization of monitoring systems to improve issue detection, root cause analysis, and system transparency."
+      ],
+      "tech": [
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Splunk",
+        "Dynatrace",
+        "Airflow"
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "company": "Dell Technologies",
       "title": "Software Engineer I",
       "role": "AIML Platform Engineer",
@@ -54,45 +82,68 @@
         "Developed and integrated APIs for automating workspace provisioning and lifecycle management.",
         "Improved CI/CD workflows by enhancing pipeline configurations, leading to faster and more reliable deployments.",
         "Provided technical support for platform users, resolving issues related to environment setup and usage."
+      ],
+      "tech": [
+        "Kubernetes",
+        "Docker",
+        "Helm",
+        "Terraform",
+        "GitLab CI/CD",
+        "Bash"
       ]
     }
   ],
   "skills": {
     "technical": [
       {
-        "id": "languages-scripting",
-        "name": "Languages & Scripting",
+        "id": "ai-ml",
+        "name": "AI/ML",
         "items": [
           {
-            "name": "Python",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/python/python-original.svg",
-            "docs": "https://docs.python.org/"
+            "name": "vLLM",
+            "icon": "/portfolio/logos/vllm.svg",
+            "docs": "https://docs.vllm.ai/"
           },
           {
-            "name": "C#",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/csharp/csharp-original.svg",
-            "docs": "https://learn.microsoft.com/dotnet/csharp/"
+            "name": "SGLang",
+            "icon": "https://avatars.githubusercontent.com/u/147780389?s=200&v=4",
+            "docs": "https://docs.sglang.ai/"
           },
           {
-            "name": "Java",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/java/java-original.svg",
-            "docs": "https://docs.oracle.com/javase/"
+            "name": "OpenAI / Azure OpenAI",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/azure/azure-original.svg",
+            "docs": "https://learn.microsoft.com/azure/ai-foundry/openai/"
           },
           {
-            "name": "Bash",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/bash/bash-original.svg",
-            "docs": "https://www.gnu.org/software/bash/manual/"
+            "name": "Vertex AI",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/googlecloud/googlecloud-original.svg",
+            "docs": "https://cloud.google.com/vertex-ai/docs"
           },
           {
-            "name": "TypeScript",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg",
-            "docs": "https://www.typescriptlang.org/docs/"
+            "name": "Hugging Face",
+            "icon": "https://avatars.githubusercontent.com/u/25720743?s=200&v=4",
+            "docs": "https://huggingface.co/docs"
+          },
+          {
+            "name": "MLflow",
+            "icon": "https://cdn.simpleicons.org/mlflow",
+            "docs": "https://mlflow.org/docs/latest/"
+          },
+          {
+            "name": "MCP",
+            "icon": "https://cdn.simpleicons.org/modelcontextprotocol/858b96",
+            "docs": "https://modelcontextprotocol.io/"
+          },
+          {
+            "name": "Jupyter",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/jupyter/jupyter-original.svg",
+            "docs": "https://jupyter.org/"
           }
         ]
       },
       {
-        "id": "frameworks-libraries",
-        "name": "Frameworks & Libraries",
+        "id": "fullstack",
+        "name": "Fullstack",
         "items": [
           {
             "name": "React",
@@ -110,14 +161,9 @@
             "docs": "https://tailwindcss.com/docs/"
           },
           {
-            "name": "Pandas",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/pandas/pandas-original.svg",
-            "docs": "https://pandas.pydata.org/docs/"
-          },
-          {
-            "name": "Plotly",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/plotly/plotly-original.svg",
-            "docs": "https://plotly.com/python/"
+            "name": "Node.js",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nodejs/nodejs-original.svg",
+            "docs": "https://nodejs.org/docs/latest/api/"
           },
           {
             "name": "Prisma",
@@ -125,15 +171,15 @@
             "docs": "https://www.prisma.io/docs/"
           },
           {
-            "name": "Jupyter",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/jupyter/jupyter-original.svg",
-            "docs": "https://jupyter.org/"
+            "name": "FastAPI",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/fastapi/fastapi-original.svg",
+            "docs": "https://fastapi.tiangolo.com/"
           }
         ]
       },
       {
-        "id": "devops-tools",
-        "name": "DevOps & Tools",
+        "id": "infra-devops",
+        "name": "Infra & DevOps",
         "items": [
           {
             "name": "Kubernetes",
@@ -156,19 +202,9 @@
             "docs": "https://www.terraform.io/docs/"
           },
           {
-            "name": "Git",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/git/git-original.svg",
-            "docs": "https://git-scm.com/doc"
-          },
-          {
-            "name": "GitLab",
+            "name": "GitLab CI/CD",
             "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/gitlab/gitlab-original.svg",
-            "docs": "https://docs.gitlab.com/"
-          },
-          {
-            "name": "Postman",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postman/postman-original.svg",
-            "docs": "https://learning.postman.com/docs/"
+            "docs": "https://docs.gitlab.com/ci/"
           },
           {
             "name": "Airflow",
@@ -178,8 +214,8 @@
         ]
       },
       {
-        "id": "monitoring-observability",
-        "name": "Monitoring & Observability",
+        "id": "observability",
+        "name": "Observability",
         "items": [
           {
             "name": "Prometheus",
@@ -219,44 +255,69 @@
         ]
       },
       {
-        "id": "databases-storage",
-        "name": "Databases & Storage",
+        "id": "data-storage",
+        "name": "Data & Storage",
         "items": [
+          {
+            "name": "PostgreSQL",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postgresql/postgresql-original.svg",
+            "docs": "https://www.postgresql.org/docs/"
+          },
           {
             "name": "MongoDB",
             "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/mongodb/mongodb-original.svg",
             "docs": "https://www.mongodb.com/docs/"
           },
           {
-            "name": "PostgresSQL",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postgresql/postgresql-original.svg",
-            "docs": "https://www.postgresql.org/docs/"
+            "name": "Dell ECS (S3)",
+            "icon": "https://cdn.simpleicons.org/dell",
+            "docs": "https://www.dell.com/en-us/dt/storage/ecs/index.htm"
           },
           {
-            "name": "ECS",
-            "icon": "https://raw.githubusercontent.com/wavefrontHQ/docs/refs/heads/master/images/aws_ecs.png",
-            "docs": "https://aws.amazon.com/ecs/"
+            "name": "NFSv4",
+            "icon": "/portfolio/logos/nfs.svg",
+            "docs": "https://datatracker.ietf.org/doc/html/rfc7530"
           }
         ]
       },
       {
-        "id": "platforms-productivity",
-        "name": "Platforms & Productivity",
+        "id": "languages",
+        "name": "Languages",
         "items": [
           {
-            "name": "Jira",
-            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/jira/jira-original.svg",
-            "docs": "https://www.atlassian.com/software/jira/docs/"
+            "name": "Python",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/python/python-original.svg",
+            "docs": "https://docs.python.org/"
           },
           {
-            "name": "ServiceNow",
-            "icon": "https://www.servicenow.com/content/dam/servicenow-assets/images/naas/servicenow-header-logo.svg",
-            "docs": "https://developer.servicenow.com/docs/"
-          },
-          {
-            "name": "Miro",
+            "name": "TypeScript",
             "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg",
-            "docs": "https://help.miro.com/"
+            "docs": "https://www.typescriptlang.org/docs/"
+          },
+          {
+            "name": "Bash",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/bash/bash-original.svg",
+            "docs": "https://www.gnu.org/software/bash/manual/"
+          },
+          {
+            "name": "SQL",
+            "icon": "/portfolio/logos/sql.svg",
+            "docs": "https://www.postgresql.org/docs/current/sql.html"
+          },
+          {
+            "name": "PromQL",
+            "icon": "/portfolio/logos/promql.svg",
+            "docs": "https://prometheus.io/docs/prometheus/latest/querying/basics/"
+          },
+          {
+            "name": "Java",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/java/java-original.svg",
+            "docs": "https://docs.oracle.com/javase/"
+          },
+          {
+            "name": "C#",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/csharp/csharp-original.svg",
+            "docs": "https://learn.microsoft.com/dotnet/csharp/"
           }
         ]
       }
@@ -277,7 +338,6 @@
       "Team Collaboration"
     ]
   },
-
   "education": [
     {
       "id": "gsu",
@@ -301,7 +361,6 @@
       "icon": "https://commkit.gsu.edu/files/2021/05/FlameBar_2RGB.png"
     }
   ],
-
   "projects": [
     {
       "id": "portfolio",
@@ -346,7 +405,6 @@
       "timeline": "March 2024 – Present",
       "impact": "In progress. Replacing third-party VPNs and SaaS tools with a zero-trust internal network. Serving as the foundation for future observability, internal development, and secure deployments."
     },
-
     {
       "id": "budget-tracker",
       "name": "Budget Tracker - Bank Statement ETL",
@@ -371,7 +429,6 @@
       "timeline": "August 2023 - December 2023",
       "impact": "Automated manual bank statement processing, reducing data prep time by 70%. Helped gain clearer insight into spending habits and cash flow trends."
     },
-
     {
       "id": "4tldir",
       "name": "4TLDIR",
@@ -390,7 +447,6 @@
       "impact": "Featured during the Atlanta Web3 Creators Showcase. Used by 5+ community members to list and discover local Web3 projects and freelancers."
     }
   ],
-
   "privacyPolicyUrl": "/privacy-policy",
   "termsOfUseUrl": "/terms-of-service",
   "email": "anthony.asilo@outlook.com",

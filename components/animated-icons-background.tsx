@@ -12,9 +12,13 @@ export default function AnimatedIconsBackground() {
   const icons = useMemo(() => {
     if (!config) return [];
 
-    return config.skills.technical.flatMap((techSkill) =>
-      techSkill.items.map((item) => item.icon)
-    );
+    return [
+      ...new Set(
+        config.skills.technical.flatMap((techSkill) =>
+          techSkill.items.map((item) => item.icon)
+        )
+      ),
+    ];
   }, [config]);
 
   // Calculate number of rows just once or on resize

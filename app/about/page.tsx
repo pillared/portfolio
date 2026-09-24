@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 import { useConfigStore } from "@/lib/stores/useConfigStore";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
-import { Card, CardContent } from "@/components/ui/card";
+import { ExperienceTimeline } from "@/components/experience-timeline";
+import { SkillsMasonry } from "@/components/skills-masonry";
 
 export default function About() {
   const { fetchConfig, config } = useConfigStore();
@@ -29,36 +30,10 @@ export default function About() {
           className="text-foreground mx-8 min-h-screen w-full pb-12"
         >
           <h1 className="my-8 text-3xl font-semibold">Experience</h1>
-          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:p-30">
-            {config.experience.map((item) => (
-              <Card
-                key={item.id}
-                className="rounded-2xl py-8 shadow shadow-md transition-colors duration-300 hover:bg-blue-100 dark:hover:bg-gray-600"
-              >
-                <CardContent>
-                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-800 dark:text-gray-200">
-                    {item.role} — {item.company}
-                  </p>
-                  <span className="mt-2 block text-gray-500 dark:text-gray-400">
-                    {item.timeline}
-                  </span>
-                  <ul className="mt-4 list-disc space-y-2 px-8">
-                    {item.description.map((desc: string, idx: number) => (
-                      <li
-                        key={idx}
-                        className="ms-2 list-disc text-left text-wrap text-gray-700 dark:text-gray-300"
-                      >
-                        {desc}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <ExperienceTimeline
+            items={config.experience}
+            skills={config.skills.technical}
+          />
         </section>
         <Separator />
         {/* Skills */}
@@ -69,44 +44,7 @@ export default function About() {
           <h2 className="my-12 text-3xl font-semibold">Skills</h2>
 
           {/* Technical Skills */}
-          <div className="grid grid-flow-row grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:px-30">
-            {config.skills.technical.map((skillGroup) => (
-              <div
-                key={skillGroup.id}
-                className="mb-2 border-spacing-4 rounded-md border-2 border-dashed border-blue-400 p-6 dark:border-gray-700"
-              >
-                <h3 className="mt-2 mb-8 text-xl font-semibold">
-                  {skillGroup.name}
-                </h3>
-                <ul className="justify-content-center mb-4 grid grid-cols-2 justify-items-start gap-4 px-4 lg:grid-cols-2">
-                  {skillGroup.items.map(({ name, icon, docs }) => (
-                    <a
-                      key={name}
-                      href={docs}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="justify-content-center flex w-full items-center justify-items-start gap-2 rounded-lg bg-gray-100 hover:bg-blue-100 active:bg-blue-200 sm:justify-start dark:bg-gray-800 dark:hover:bg-blue-600 dark:active:bg-blue-500"
-                    >
-                      <li className="justify-content-center flex w-full flex-col items-center space-y-3 p-3">
-                        {/* <span className="w-full items-center justify-center space-y-3 p-3"> */}
-                        <Image
-                          src={icon}
-                          width={32}
-                          height={32}
-                          alt={`${name} icon`}
-                          className="m-2 flex h-16 w-16 items-center"
-                        />
-                        {/* </span> */}
-                        <p className="w-full items-center text-sm text-gray-800 dark:text-gray-50 dark:text-gray-300">
-                          {name}
-                        </p>
-                      </li>
-                    </a>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <SkillsMasonry groups={config.skills.technical} />
 
           {/* Interpersonal Skills */}
           <div className="mt-12 md:mx-[20vw]">

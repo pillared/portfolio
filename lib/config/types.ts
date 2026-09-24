@@ -13,6 +13,7 @@ export interface ExperienceItem {
   role: string;
   timeline: string;
   description: string[];
+  tech?: string[];
 }
 
 export interface TechnicalSkills {
